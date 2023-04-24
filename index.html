@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>todo</title>
+  </head>
+  <body>
+    <header class="header container">
+      <h4 class="header__date">00:00:00</h4>
+      <div class="hours__wrapper">
+        <span class="hour"></span>
+        :
+        <span class="minute"></span>
+        :
+        <span class="second"></span>
+      </div>
+      <h3 class="header__logo">Task List</h3>
+    </header>
+    <section class="section container">
+      <form class="form">
+        <input
+          type="text"
+          name="task"
+          class="input"
+          placeholder="type your task"
+        />
+        <span id="error__text"></span>
+        <button type="submit" class="btn">Add</button>
+      </form>
+      <ul class="list"></ul>
+
+      <div class="modal hidden">
+       <div class="modal__wrapper">
+        <div class="modal__header">
+            <h2 class="modal__title">Edit your task:</h2>
+            <img class="modal__close" src="./img/x-22.png" alt="">
+          </div>
+          <form class="modal__form">
+            <input type="text" class="modal__input" />
+            <button type="submit" class="modal__btn">Save</button>
+          </form>
+       </div>
+       <div class="overlay"> </div>
+      </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
